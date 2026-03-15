@@ -48,7 +48,7 @@ tempo_inicial = pygame.time.get_ticks()
 fonte = pygame.font.Font(None, 36)
 
 # Carregar e tocar a música
-pygame.mixer.music.load(resource_path("assets/musica.mp3")) # Carregar o arquivo correto
+pygame.mixer.music.load(resource_path("assets/04 - Flying Battery Zone 1 MP3.mp3")) # Carregar o arquivo correto
 pygame.mixer.music.play(-1, 0.0)  # A música vai tocar infinitamente, começando no início
 
 # Exibir mensagem inicial
