@@ -31,11 +31,10 @@ Neste projeto foram utilizados:
 Como executar o jogo
 
 1. Instale o Python
-2. Instale a biblioteca pygame
+2. Instale todas as bibliotecas utilizadas na pasta requirements.txt
 3. Execute o jogo
 
-
-Objetivo do projeto
+IMPORTANTE: ao baixar os arquivos respeitar a estrutura da pasta para o correto funcionamento do jogo.
 
 Este projeto foi criado como parte dos meus estudos em programação e desenvolvimento de jogos.
 
