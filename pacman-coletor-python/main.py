@@ -2,15 +2,6 @@ import pygame
 import random
 import os
 
-# Função para obter o caminho correto de arquivos, mesmo quando o executável é gerado
-def resource_path(relative_path):
-    try:
-        # PyInstaller cria uma pasta temporária para armazenar os arquivos
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = os.path.abspath(".")
-    return os.path.join(base_path, relative_path)
-
 # Inicializa o jogo
 pygame.init()
 
@@ -32,7 +23,7 @@ y = ALTURA // 2
 velocidade = 8
 
 # Carregar a imagem do jogador
-imagem_jogador = pygame.image.load(resource_path("assets/pacman.png"))  # Usa o caminho correto
+imagem_jogador = pygame.image.load("assets/pacman.png") # Usa o caminho correto
 imagem_jogador = pygame.transform.scale(imagem_jogador, (tamanho, tamanho))
 
 # Configuração dos pontos
@@ -51,7 +42,7 @@ tempo_inicial = pygame.time.get_ticks()
 fonte = pygame.font.Font(None, 36)
 
 # Carregar e tocar a música
-pygame.mixer.music.load(resource_path("assets/04 - Flying Battery Zone 1 MP3.mp3"))  # Carregar o arquivo correto
+pygame.mixer.music.load("assets/04 - Flying Battery Zone 1 MP3.mp3") # Carregar o arquivo correto
 pygame.mixer.music.play(-1, 0.0)  # A música vai tocar infinitamente, começando no início
 
 # Exibir mensagem inicial
